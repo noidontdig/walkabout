@@ -14,8 +14,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+	[self SetupSound];
+   // [audioPlayer play];
     return YES;
+}
+
+-(void)SetupSound
+{
+    NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/shlohmo.mp3", [[NSBundle mainBundle] resourcePath]]];
+    
+	NSError *error;
+	audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+	audioPlayer.numberOfLoops = -1;
+    
+	if (audioPlayer == nil)
+		NSLog(@"poop");
+	else
+		[audioPlayer play];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

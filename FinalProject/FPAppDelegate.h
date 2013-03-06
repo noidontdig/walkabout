@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface FPAppDelegate : UIResponder <UIApplicationDelegate>
+@interface FPAppDelegate : UIResponder <UIApplicationDelegate> {
+    AVAudioPlayer *audioPlayer;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+
+-(void)SetupSound;
 
 @end

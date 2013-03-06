@@ -1,5 +1,5 @@
 //
-//  FPViewController.h
+//  AboutViewController.h
 //  FinalProject
 //
 //  Created by Alexandra Qin on 5/5/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FPViewController : UIViewController
-
-
+@interface AboutViewController : UIViewController
 
 @end

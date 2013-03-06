@@ -1,5 +1,5 @@
 //
-//  FPViewController.h
+//  MySegueClass1.h
 //  FinalProject
 //
 //  Created by Alexandra Qin on 5/5/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FPViewController : UIViewController
-
-
+@interface MySegueClass1 : UIStoryboardSegue
 
 @end

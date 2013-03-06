@@ -1,27 +1,418 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="FPViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="ifk-oT-DDY">
+                                <rect key="frame" x="198" y="134" width="84" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="huE-cJ-cr6" kind="custom" customClass="MySegueClass1" id="HUJ-nC-pdB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="UgW-jL-43V">
+                                <rect key="frame" x="201" y="190" width="78" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="ABOUT">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6Fl-nS-NqA" kind="custom" customClass="MySegueClass1" id="oKv-km-jvj"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="walkabout.png" id="Svu-B1-rKV">
+                                <rect key="frame" x="99" y="35" width="297" height="53"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-290" y="87"/>
+        </scene>
+        <!--Story1 View Controller-->
+        <scene sceneID="sTk-aM-lRu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Stj-G3-iu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="huE-cJ-cr6" customClass="Story1ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5v5-mf-Y9i">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="PoA-bc-Akb">
+                                <rect key="frame" x="28" y="20" width="424" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="FirstLabel" destination="PoA-bc-Akb" id="4sw-ps-d30"/>
+                        <segue destination="YCs-AJ-WQ7" kind="custom" identifier="firstSegue" customClass="MySegueClass1" id="Al1-yH-0aQ"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="503" y="-93"/>
+        </scene>
+        <!--Story2 View Controller-->
+        <scene sceneID="fz7-f4-8Ah">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bh3-D9-qeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="yRk-Qz-cF0" customClass="Story2ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ehV-gz-aca">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="DcZ-9T-rqX">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="FirstLabel" destination="DcZ-9T-rqX" id="5gB-zd-ebB"/>
+                        <segue destination="4Qw-Sa-ShY" kind="custom" identifier="superSegue5" customClass="MySegueClass1" id="6m5-8U-YfJ"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2894" y="-31"/>
+        </scene>
+        <!--View Controller 5a-->
+        <scene sceneID="hJd-AH-Xps">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Gw-NM-MBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="OGk-w3-3yl" customClass="ViewController5a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cY3-K0-C4R">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="D9X-qG-Cc3">
+                                <rect key="frame" x="0.0" y="0.0" width="460" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="FirstLabel" destination="D9X-qG-Cc3" id="dUp-8m-Bok"/>
+                        <segue destination="yRk-Qz-cF0" kind="custom" identifier="superSegue4" customClass="MySegueClass1" id="gip-6m-h29"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2371" y="334"/>
+        </scene>
+        <!--View Controller5-->
+        <scene sceneID="dgI-Oi-21v">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mnt-fi-wMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="4Qw-Sa-ShY" customClass="ViewController5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mbg-2b-aYO">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Us4-bS-UUa">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="FirstLabel" destination="Us4-bS-UUa" id="GYX-7V-gEP"/>
+                        <segue destination="kmV-Xf-5hb" kind="custom" identifier="superSegue6" customClass="MySegueClass1" id="xsp-EY-Ulb"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3578" y="-39"/>
+        </scene>
+        <!--View Controller6-->
+        <scene sceneID="W8n-5X-bAt">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WeO-nI-kFh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="kmV-Xf-5hb" customClass="ViewController6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lOX-oA-0Wm">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="otI-nZ-MNq">
+                                <rect key="frame" x="44" y="20" width="390" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <outlet property="FirstLabel" destination="otI-nZ-MNq" id="nY1-zI-Cdt"/>
+                        <segue destination="8A2-Tq-MJ3" kind="custom" identifier="superSegue7" customClass="MySegueClass1" id="MNM-IR-4bc"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4176" y="-157"/>
+        </scene>
+        <!--View Controller7-->
+        <scene sceneID="ABK-gL-H7j">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C84-Uu-IgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="8A2-Tq-MJ3" customClass="ViewController7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e50-mx-Yod">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Default.png" id="Gv9-hy-vbh">
+                                <rect key="frame" x="80" y="-80" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <segue destination="2" kind="custom" identifier="endSegue" customClass="MySegueClass1" id="DxM-dQ-3gj"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4717" y="17"/>
+        </scene>
+        <!--Play1 View Controller-->
+        <scene sceneID="Vz6-Vb-vN2">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGv-r0-0Dz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="YCs-AJ-WQ7" customClass="Play1ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UHS-t6-cDU">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="bli-rJ-1l7">
+                                <rect key="frame" x="25" y="0.0" width="455" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cBd-l6-wdq"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="FirstLabel" destination="bli-rJ-1l7" id="B3r-AV-Mon"/>
+                        <segue destination="fIa-Ft-bfd" kind="custom" identifier="superSegue2" customClass="MySegueClass1" id="Mld-GH-4A7"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1147" y="-44"/>
+        </scene>
+        <!--Play2 View Controller-->
+        <scene sceneID="VVv-JN-QYY">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z23-s3-hzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="fIa-Ft-bfd" customClass="Play2ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zZf-ac-Xm9">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ja1-e0-g88">
+                                <rect key="frame" x="20" y="20" width="242" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="xDt-WT-CYi">
+                                <rect key="frame" x="20" y="120" width="242" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="v5g-3l-GhW">
+                                <rect key="frame" x="20" y="170" width="242" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="FirstLabel" destination="ja1-e0-g88" id="zd0-au-L6V"/>
+                        <outlet property="ansLabel1" destination="xDt-WT-CYi" id="d83-Qa-M97"/>
+                        <outlet property="ansLabel2" destination="v5g-3l-GhW" id="efQ-Dx-duj"/>
+                        <segue destination="OGk-w3-3yl" kind="custom" identifier="superSegue3" customClass="MySegueClass1" id="x5l-DN-CJg"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1793" y="251"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="h2b-7n-FAS">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkC-yg-Mya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="6Fl-nS-NqA" customClass="AboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sMb-RO-pcK">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uiA-Be-tZz">
+                                <rect key="frame" x="204" y="227" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="custom" customClass="MySegueClass1" id="pll-gW-TdA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="10" id="vaO-1f-0AY">
+                                <rect key="frame" x="118" y="49" width="245" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Walkabout is a meditative app based on the Buddhist principle of Buddha nature. Every human being is innately perfect. As are you.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="289" y="434"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Default.png" width="320" height="480"/>
+        <image name="walkabout.png" width="297" height="53"/>
+    </resources>
+    <classes>
+        <class className="AboutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
+        </class>
+        <class className="FPViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FPViewController.h"/>
+        </class>
+        <class className="Play1ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Play1ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="FirstLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Play2ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Play2ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="FirstLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ansLabel1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ansLabel2" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Story1ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Story1ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="FirstLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Story2ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Story2ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="FirstLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ViewController5" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController5.h"/>
+            <relationships>
+                <relationship kind="outlet" name="FirstLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ViewController5a" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController5a.h"/>
+            <relationships>
+                <relationship kind="outlet" name="FirstLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ViewController6" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController6.h"/>
+            <relationships>
+                <relationship kind="outlet" name="FirstLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ViewController7" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController7.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
+        <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="pll-gW-TdA"/>
+    </inferredMetricsTieBreakers>
 </document>
